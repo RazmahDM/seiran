@@ -165,3 +165,88 @@ header {
     border: 0;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+/** Стилизация для Footer!!!!!! **/
+footer {
+    background-color: #2C2C2C;
+}
+
+footer .container {
+    display: block;
+}
+
+.content_footer {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+/** Стили для логотипа Footer!!!! **/
+.logo_footer img {
+    width: 300px;
+}
+/** Стили Контактной информации Footer!!!! **/
+.contacts_ftr li:first-child {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.contacts_ftr li:not(:first-child) {
+    margin-bottom: 15px;
+}
+
+.contacts_ftr li:nth-child(2) img {
+    margin-right: 10px;
+}
+
+.contacts_ftr li:nth-child(3) img {
+    margin-right: 10px;
+}
+
+.contacts_ftr li:not(:first-child) {
+    display: flex;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.contacts_ftr li:nth-child(4) img {
+    margin-right: 10px;
+}
+/** Стили для секции Пользователю Footer!!!! **/
+.users_info li:first-child {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.users_info li a:not(:first-child) {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+.users_info li:not(:first-child) {
+    text-decoration: underline;
+}
+/** Стили для секции Партнеры Footer!!!! **/
+.partner_ftr li:first-child {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+/** Стили для секции подложки для Footer!!!! **/
