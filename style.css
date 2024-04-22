@@ -9,8 +9,13 @@
 body {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
+    font-size: 16px;
     text-decoration: none;
-    background-color: #424242;
+    background-color: #ffffff;
+    background-image: url(img/Главная/hero.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
 }
 
 ul, li {
@@ -29,224 +34,481 @@ a {
     color: #ffffff;
 }
 
-header {
-    margin-top: 20px;
-    position: relative;
+h1 {
+    font-size: 40px;
+    font-weight: 300;
 }
 
 .container {
     width: 1292px;
     margin: 0 auto;
-    display: flex;
 }
 
-.logo {
+/**навигация**/
+
+header {
+    margin-top: 37px;
+}
+
+nav.container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
 }
 
-.nav_panel {
-    width: 680px;
-    margin-left: auto;
-}
-
-.nav_panel ul {
+.menu ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav_panel ul li>a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.menu ul li:not(:last-child) {
+    margin-right: 27px;
 }
 
-.basket {
-    background-color: #ffffff;
-    padding: 8px 22px;
-    border: 2px #ffffff solid;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.basket:hover {
-    border: 2px #000000 solid;
-    transition: 0.2ms;
-}
-
-.basket img {
-    width: 18px;
-}
-
-.basket a {
-    color: #000000;
+.menu ul li a {
     font-weight: 600;
 }
 
+.basket_btn {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 8px 22px;
+    margin-left: 40px;
+}
+
+.basket_btn img {
+    margin-right: 10px;
+}
+
+.basket_btn a {
+    color: #000000;
+}
+
+.basket_btn:hover {
+    border: 2px solid #000000;
+    transition: 0.2ms;
+    cursor: pointer;
+}
+
+/**обложка**/
+
 .cover {
+    display: flex;
     flex-direction: column;
-    margin-top: 275px;
+    margin-top: 265px;
+}
+
+.cover p:first-child {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    color: #ffffff;
 }
 
 .cover span {
+    font-size: 64px;
+    font-family: 'Michroma', sans-serif;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
-.cover span:first-child {
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-.name_company {
-    font-family: "Michroma", sans-serif;
-    font-size: 64px;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-}
-
-.introduction {
+.cover p:nth-child(3) {
+    width: 460px;
     font-size: 20px;
     font-weight: 200;
-    width: 460px;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 22px;
+    color: #ffffff;
 }
 
-.btn_cover {
+.cover_btn {
     display: flex;
-    margin-top: 27px;
+    margin-top: 40px;
 }
 
-.catalog_btn {
-    align-items: center;
+.cover_btn a:first-child {
     background-color: #B22A2A;
+    padding: 7px 47px;
     border: 0;
     border-radius: 5px;
     color: #ffffff;
-    cursor: pointer;
-    margin-right: 26px;
 }
 
-.catalog_btn a {
-    font-family: "Manrope", sans-serif;
-    padding: 10px 47px;
-    font-weight: 700;
-}
-
-.catalog_btn:hover a {
+.cover_btn a:last-child {
     background-color: #ffffff;
-    color: #000000;
-    transition: 0.2ms;
+    padding: 7px 47px;
     border: 0;
     border-radius: 5px;
+    color: #000000;
+    margin-left: 26px;
 }
 
-.recording_btn {
+/**полоса с брендами под обложкой**/
+
+.brands {
+    background-color: #E6E6E6;
+    padding: 27px 0;
+    margin-top: 380px;
+}
+
+.brands .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.recording_btn a {
-    font-family: "Manrope", sans-serif;
-    padding: 10px 47px;
+.brands .container img {
+    height: 54px;
+}
+
+/**секция с преимуществами**/
+
+.container .advantages {
+    margin-top: 65px;
+}
+
+.advantages h1 {
+    margin-bottom: 40px;
+}
+
+.advantages_list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.advantages_item:nth-child(1) {
+    grid-column: 1 / 3;
+    background-color: #E6E6E6;
+    height: 280px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages_item:nth-child(1) p {
+    font-size: 20px;
+    font-weight: 200;
     color: #000000;
-    font-weight: 700;
+    text-transform: uppercase;
+    width: 190px;
+    padding: 30px 30px;
 }
 
-.recording_btn:hover a {
-    background-color: #B22A2A;
-    color: #ffffff;
-    transition: 0.2ms;
+.advantages_item:nth-child(1) a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #616161;
+    padding: 7px 24px;
     border: 0;
     border-radius: 5px;
+    margin: 215px 40px 30px 0;
 }
 
+.advantages_item:nth-child(2) {
+    grid-column: 3 / 5;
+    background-color: #E6E6E6;
+    height: 280px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.advantages_item:nth-child(2) p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+    text-transform: uppercase;
+    width: 230px;
+    padding: 30px 0 0 30px;
+}
 
+.advantages_item:nth-child(2) a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #616161;
+    padding: 7px 24px;
+    border: 0;
+    border-radius: 5px;
+    margin: 215px 40px 30px 0;
+}
 
+.advantages_item:nth-child(3) {
+    grid-column: 5 / 7;
+    background-color: #E6E6E6;
+    height: 280px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.advantages_item:nth-child(3) p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 30px 0 0 30px;
+}
 
+.advantages_item:nth-child(3) a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #616161;
+    padding: 7px 24px;
+    border: 0;
+    border-radius: 5px;
+    margin: 215px 40px 30px 0;
+}
 
+.advantages_item:nth-child(4) {
+    grid-column: 1 / 4;
+    background-color: #E6E6E6;
+    height: 280px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.advantages_item:nth-child(4) p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+    text-transform: uppercase;
+    width: 415px;
+    padding: 30px 0 0 30px;
+}
 
+.advantages_item:nth-child(4) a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #616161;
+    padding: 7px 24px;
+    border: 0;
+    border-radius: 5px;
+    margin: 215px 40px 30px 0;
+}
 
-/** Стилизация для Footer!!!!!! **/
+.advantages_item:nth-child(5) {
+    grid-column: 4 / 7;
+    background-color: #E6E6E6;
+    height: 280px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages_item:nth-child(5) p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+    text-transform: uppercase;
+    width: 275px;
+    padding: 30px 0 0 30px;
+}
+
+.advantages_item:nth-child(5) a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #616161;
+    padding: 7px 24px;
+    border: 0;
+    border-radius: 5px;
+    margin: 215px 40px 30px 0;
+}
+
+/**секция с партнерами и проектами**/
+
+.projects h1 {
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.project_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.project_card div {
+    background-color: #2F2F2F;
+    height: 485px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project_card div a {
+    margin: 10px auto;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.project_card div p {
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+div.evil p {
+    padding: 20px 0px 47px 20px;
+}
+
+/**секция с мероприятиями**/
+
+.event h1 {
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.event_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.event_item {
+    background-color: #2F2F2F;
+    height: 118px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.event_item p {
+    color: #ffffff;
+    width: 70%;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0px 0px 20px 20px;
+}
+
+/**секция с деятельностью**/
+
+.activity {
+    padding-bottom: 150px;
+}
+
+.activity h1 {
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.activity_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 188px;
+}
+
+.activity_item img {
+    margin-bottom: 36px;
+}
+
+/**footer**/
+
 footer {
     background-color: #2C2C2C;
 }
 
-footer .container {
-    display: block;
-}
-
-.content_footer {
+.content_ftr {
     display: flex;
-    align-items: top;
+    flex-direction: row;
     justify-content: space-between;
-    padding-top: 65px;
-}
-/** Стили для логотипа Footer!!!! **/
-.logo_footer img {
-    width: 300px;
-}
-/** Стили Контактной информации Footer!!!! **/
-.contacts_ftr li:first-child {
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: 500;
-    margin-bottom: 32px;
+    align-items: start;
+    padding: 55px 0 55px 0;
+    border-bottom: 1px solid #A3A3A3;
 }
 
-.contacts_ftr li:not(:first-child) {
-    margin-bottom: 15px;
+.logo_ftr img {
+    width: 322px;
 }
 
-.contacts_ftr li:nth-child(2) img {
-    margin-right: 10px;
-}
-
-.contacts_ftr li:nth-child(3) img {
-    margin-right: 10px;
-}
-
-.contacts_ftr li:not(:first-child) {
+.contacts_list li:not(:first-child) {
     display: flex;
-    color: #ffffff;
-    font-weight: 300;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;    
 }
 
-.contacts_ftr li:nth-child(4) img {
-    margin-right: 10px;
-}
-/** Стили для секции Пользователю Footer!!!! **/
-.users_info li:first-child {
+.contacts_list li:first-child, .users_info li:first-child, .partners li:first-child {
     font-size: 24px;
     color: #ffffff;
-    font-weight: 500;
     margin-bottom: 32px;
+    font-weight: 600;
 }
 
-.users_info li a:not(:first-child) {
+.contacts_list li:nth-child(n+2) {
+    font-size: 16px;
+    color: #ffffff;
     margin-bottom: 15px;
     font-weight: 300;
+}
+
+.contacts_list li img {
+    width: 28px;
+    margin-right: 20px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.users_info li a {
     font-size: 16px;
-
-}
-
-.users_info li:not(:first-child) {
-    text-decoration: underline;
-}
-/** Стили для секции Партнеры Footer!!!! **/
-.partner_ftr li:first-child {
-    font-size: 24px;
     color: #ffffff;
-    font-weight: 500;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
+    font-weight: 300;
 }
 
-/** Стили для секции подложки для Footer!!!! **/
+.users_info li a:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.partners li a {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.partners li a:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.footer_btm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 ;
+}
