@@ -5,3 +5,13 @@ from django.views.generic import TemplateView
 
 class HomeView(TemplateView):
     template_name = 'index.html'
+    
+
+
+class RemontView(TemplateView):
+    template_name = 'remont.html'
+
+    
+
+class AboutView(TemplateView):
+    template_name = 'about.html'

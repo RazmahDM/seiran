@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}FORMULA161|Автосервис|Автозапчасти{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/">Главная</a></li>
+        <li>></li>
+        <li>Ремонт</li>
+    </ul>
+    <section class="form_repair">
+        <h1>Заполните форму для предварительной записи на ремонт</h1>
+        <form class="form_repair_list" action="" method="post" autocomplete="on" name="repair_form">
+            <div class="auto_info">  
+                <div class="form_group">
+                    <label for="brand">Марка</label>
+                    <input type="text" class="form-control" id="brand" required>
+                </div>
+                <div class="form_group">
+                    <label for="model">Модель</label>
+                    <input type="text" class="form-control" id="model" required>
+                </div>
+                <div class="form_group">
+                    <label for="year">Год выпуска</label>
+                    <input type="text" class="form-control" id="year" minlength="4" maxlength="4">
+                </div>
+                <div class="form_group_restyling">
+                    <input type="checkbox" class="form-control" value="restyling">
+                    <label for="restyling">Рестайлинг</label>
+                </div>
+            </div>
+            <div class="problem">                        
+                <div class="form_group">
+                    <label for="cause">Причина обращения</label>
+                    <input type="text" class="form-control" id="cause" required>
+                </div>
+                <div class="form_group">
+                    <label for="problem">Описание проблемы</label>
+                    <textarea type="text" class="form-control" id="problem"></textarea>
+                </div>
+            </div>
+            <div class="user_info">                        
+                <div class="form_group">
+                    <label for="number">Номер телефона</label>
+                    <input type="tel" class="form-control" id="number" autocomplete="on" minlength="11" maxlength="11" required>
+                </div>
+                <div class="form_group">
+                    <label for="email">Адрес эл. почты</label>
+                    <input type="email" class="form-control" id="email" autocomplete="on" required>
+                </div>
+                <div class="form_group">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" class="form-control" id="surname" autocomplete="on" required>
+                </div>
+                <div class="form_group">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-control" id="name" autocomplete="on" required>
+                </div>
+                <div class="form_group">
+                    <label for="date">Дата и время</label>
+                    <input type="datetime-local" class="form-control" id="date" required>
+                </div>
+            </div>
+            <div class="button_form">                        
+                <div class="form_group">
+                    <input type="checkbox" class="form-control" required value="agreement">
+                    <label for="agreement">Я даю согласие на обработку персональных данных</label>
+                </div>
+                <button type="submit">Записаться</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+{% endblock content %}

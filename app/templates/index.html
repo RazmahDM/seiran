@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}FORMULA161|Автосервис|Автозапчасти{% endblock title %}
+
+{% block content %}
+        <div class="cover__outer">
+            <div class="container">
+                <section class="cover">
+                    <p>Вас приветствует автосервис</p>
+                    <span>Formula161</span>
+                    <p>Наша компания занимает лидерскую позицию в области продажи автозапчастей и ремонта легковых авто</p>
+                    <div class="cover_btn">
+                        <a href="/catalog">Каталог</a>
+                        <a href="/remont">Запись</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="brands">
+            <div class="container">
+                <img src="{% static 'img/Главная/brands/Logo-BMW-M-200mm-Front-v1.png' %}" alt="bmw">
+                <img src="{% static 'img/Главная/brands/Audi-Logo.wine.png' %}" alt="audi">
+                <img src="{% static 'img/Главная/brands/Volkswagen-Logo-1967.png' %}" alt="vw">
+                <img src="{% static 'img/Главная/brands/Nissan_2020_logo.svg.png' %}" alt="nissan">
+                <img src="{% static 'img/Главная/brands/honda_logo_icon_181334.png' %}" alt="honda">
+                <img src="{% static 'img/Главная/brands/Toyota_Motor_North_America_logo_(2019).svg.png' %}" alt="toyota">
+                <img src="{% static 'img/Главная/brands/Dodge-w-Ramhead.png' %}" alt="dodge">
+            </div>
+        </section>
+        <div class="container">
+            <section class="advantages">
+                <h1>Преимущества нашей компании</h1>
+                <div class="advantages_list">
+                    <div class="advantages_item">
+                        <p>Работаем с авто любых возрастов</p>
+                        <a href="/remont">Запись</a>
+                    </div>
+                    <div class="advantages_item">
+                        <p>Реставрация и восстановление после серьезных ДТП</p>
+                        <a href="/remont">Запись</a>
+                    </div>
+                    <div class="advantages_item">
+                        <p>Лучшее качество материала и запчастей</p>
+                        <a href="/catalog">Каталог</a>
+                    </div>
+                    <div class="advantages_item">
+                        <p>Производим малярные работы в специализированных боксах</p>
+                        <a href="/remont">Запись</a>
+                    </div>
+                    <div class="advantages_item">
+                        <p>Производим доставку запчастей из за рубежа</p>
+                        <a href="/catalog">Заказать</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="projects">
+                <h1>Партнеры и проекты</h1>
+                <div class="project_card">
+                    <div class="clubturbo">
+                        <a href="">Club Turbo</a>
+                        <p>Компания придерживается нестандартого решения задач и подходу к ним. Специализируется на ремонте авто и продажи запчастей для тюнинга.</p>
+                    </div>
+                    <div class="evil">
+                        <a href="">Evil Wheels</a>
+                        <p>Автосервис специализируется на подготовке вашего авто к соревновательным заездам и высоким нагрузкам. </p>
+                    </div>
+                    <div class="turbotema">
+                        <a href="">TurboTema</a>
+                        <p>Магазин продажи автозапчастей для тюнинга вашего авто. Так же производит ремонт гражданских авто на территории Ростовской области.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="event">
+                <h1>Организация мероприятий</h1>
+                <div class="event_list">
+                    <div class="event_item">
+                        <p>Организация соревнований по автозвуку и дрифт-заездам в Ростовской области</p>
+                    </div>
+                    <div class="event_item">
+                        <p>Проведение мероприятий по оценке квалификации механиков в городе Ростов-на-Дону</p>
+                    </div>
+                    <div class="event_item">
+                        <p>Проект “Japan Spare Parts” (заказ запчастей из Японии)</p>
+                    </div>
+                    <div class="event_item">
+                       <p>Автосервис FORMULA161</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="activity">
+                <h1>Деятельность компании</h1>
+                <div class="activity_list">
+                    <figure class="activity_item">
+                        <img src="{% static 'img/icon/car-repair_svgrepo.com.png' %}" alt="repair">
+                        <figcaption>Тюнинг авто и его усовершенствование</figcaption>
+                    </figure>                
+                    <figure class="activity_item">
+                        <img src="{% static 'img/icon/document.png' %}" alt="document">
+                        <figcaption>Оказание услуг в поиске запчастей из зарубежа</figcaption>
+                    </figure>                                        
+                    <figure class="activity_item">
+                        <img src="{% static 'img/icon/Vector activity.png' %}" alt="mech">
+                        <figcaption>Ремонт и техническое обслуживание</figcaption>
+                    </figure>                                        
+                    <figure class="activity_item">
+                        <img src="{% static 'img/icon/color.png' %}" alt="color">
+                        <figcaption>Произведение малярных работ</figcaption>
+                    </figure>            
+                    <figure class="activity_item">
+                        <img src="{% static 'img/icon/audio.png' %}" alt="audio">
+                        <figcaption>Установка и настройка аудиосистемы</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+
+{% endblock content %}

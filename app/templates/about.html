@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}FORMULA161|Автосервис|Автозапчасти{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="">Главная</a></li>
+        <li>></li>
+        <li>О нас</li>
+    </ul>
+    <section class="activity">
+        <h1>О компании и ее деятельности</h1>
+        <div class="activity_list">
+            <figure class="activity_item">
+                <img src="img/icon/car-repair_svgrepo.com.png" alt="repair">
+                <figcaption>Тюнинг авто и его усовершенствование</figcaption>
+            </figure>                
+            <figure class="activity_item">
+                <img src="img/icon/document.png" alt="document">
+                <figcaption>Оказание услуг в поиске запчастей из зарубежа</figcaption>
+            </figure>                                        
+            <figure class="activity_item">
+                <img src="img/icon/Vector activity.png" alt="mech">
+                <figcaption>Ремонт и техническое обслуживание</figcaption>
+            </figure>                                        
+            <figure class="activity_item">
+                <img src="img/icon/color.png" alt="color">
+                <figcaption>Произведение малярных работ</figcaption>
+            </figure>            
+            <figure class="activity_item">
+                <img src="img/icon/audio.png" alt="audio">
+                <figcaption>Установка и настройка аудиосистемы</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="block_activity">
+        <div class="block_activity_item">
+            <p>Ремонт двигателя</p>
+            <div class="activity_item_btn">
+                <a href="">Каталог</a><a href="">Запись</a>
+            </div>
+        </div>
+        <div class="block_activity_item">
+            <p>Ремонт ходовой части</p>
+            <div class="activity_item_btn">
+                <a href="">Каталог</a><a href="">Запись</a>
+            </div>
+        </div>
+        <div class="block_activity_item">
+            <p>Малярные работы</p>
+            <div class="activity_item_btn">
+                <a href="">Запись</a>
+            </div>
+        </div>
+        <div class="block_activity_item">
+            <p>Тюнинг вашего авто</p>
+            <div class="activity_item_btn">
+                <a href="">Каталог</a><a href="">Запись</a>
+            </div>
+        </div>
+        <div class="block_activity_item">
+            <p>доставка испортных запчастей</p>
+            <div class="activity_item_btn">
+                <a href="">Заказать</a>
+            </div>
+        </div>
+        <div class="block_activity_item">
+            <p>техническое обслуживание</p>
+            <div class="activity_item_btn">
+                <a href="">Каталог</a><a href="">Запись</a>
+            </div>
+        </div>
+    </section>
+    <section class="choice">
+        <h1> Почему нас выбирают</h1>
+        <div class="choice_list">
+            <p>Наша компания по продаже автозапчастей – это надежный партнер для автовладельцев, которым нужны качественные и надежные комплектующие для своих автомобилей. Мы специализируемся на запчастях от ведущих производителей, и наш ассортимент включает широкий выбор деталей для различных марок и моделей.</p>
+            <div class="choice_carousel">
+                ccccc
+            </div>
+        </div>
+        <div class="reputation">
+            <div class="reputation_item">
+                <div class="icon_requtation">
+                    <figure>
+                        <img src="img/icon/group.png" alt="group">
+                        <figcaption>Более 50 высококвалифицированных  сотрудников</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/icon/doc.png" alt="document">
+                        <figcaption>Гарантия качества запчастей и ремонта</figcaption>
+                    </figure>
+                </div>
+                <p>Мы гордимся своей репутацией, как надежного партнера для автовладельцев и автосервисов. Наш профессиональный и дружелюбный персонал готов помочь вам в выборе правильных запчастей и ответить на любые вопросы, связанные с ремонтом и обслуживанием вашего автомобиля.</p>
+            </div>
+            <div class="reputation_item">
+                <p>Наш ассортимент включает в себя запчасти для различных марок автомобилей, в том числе таких популярных как Audi, BMW, Mercedes-Benz, Toyota, Volkswagen и многих других. Мы поставляем оригинальные запчасти напрямую от ведущих производителей, чтобы гарантировать высокое качество наших товаров.</p>
+                <div class="logo_brands">
+                    <img src="{% static '/img/Главная/brands/Volkswagen-Logo-1967.png' %}" alt="vw">
+                    <img src="{% static '/img/Главная/brands/Audi-Logo.wine.png' %}" alt="audi">
+                    <img src="{% static '/img/Главная/brands/honda_logo_icon_181334.png' %}" alt="honda">
+                    <img src="{% static '/img/Главная/brands/Toyota_Motor_North_America_logo_(2019).svg.png' %}" alt="toyota">
+                    <img src="{% static '/img/Главная/brands/Logo-BMW-M-200mm-Front-v1.png' %}" alt="bmw">
+                    <img src="{% static '/img/Главная/brands/Nissan_2020_logo.svg.png' %}" alt="nissan">
+                    <img src="{% static '/img/Главная/brands/Dodge-w-Ramhead.png' %}" alt="dodge">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="import">
+        <h1>Импортные запчасти</h1>
+        <div class="categories_list">
+            <div class="categories_item">
+                <p>Ходовая и рулевая части</p>
+                <img src="{% static '/img/Главная/руль.png' %}" alt="wheels">
+            </div>
+            <div class="categories_item">
+                <p>Шины и диски</p>
+                <img src="{% static '/img/Главная/BBS_TL-A_glossy_bronze_30_1000x1000 2.png' %}" alt="disk">
+            </div>
+            <div class="categories_item">
+                <p>Для двигателя</p>
+                <img src="{% static '/img/Главная/pngtree-v8-engine-pistons-on-a-crankshaft-gear-png-image_10495175 1.png' %}" alt="engine" style="width: 248px; height: 104px; margin-top: auto;">
+            </div>
+            <div class="categories_item">
+                <p>Контрактные ДВС</p>
+                <img src="{% static '/img/Главная/remont-dvigatelya 1.png' %}" alt="dvs">
+            </div>
+            <div class="categories_item">
+                <p>Кузовные детали</p>
+                <img src="{% static '/img/Главная/unnamed 1.png' %}" alt="sli">
+            </div>
+            <div class="categories_item">
+                <p>Другое</p>
+                <img src="{% static '/img/Главная/Group 29.png' %}" alt="ovl">
+            </div>
+        </div>
+    </section>
+    <section class="company_list">
+        <ul>
+            <li>Volkswagen</li>
+            <li>Mazda</li>
+            <li>Nissan</li>
+            <li>Bentley</li>
+            <li>Chevrolet</li>
+            <li>Infiniti</li>
+            <li>Ford</li>
+            <li>Jaguar</li>
+            <li>Lexus</li>
+            <li>Mitsubishi</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Toyota</li>
+            <li>Mercedes-Benz</li>
+            <li>Shkoda</li>
+            <li>Suzuki</li>
+        </ul>
+    </section>
+</div>
+
+{% endblock content %}
