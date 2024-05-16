@@ -15,3 +15,12 @@ class RemontView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = 'about.html'
+
+
+
+class CatalogView(TemplateView):
+    template_name = 'catalog.html'
+
+    
+class ProductsView(TemplateView):
+    template_name = 'products.html'

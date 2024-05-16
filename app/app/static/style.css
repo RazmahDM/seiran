@@ -37,8 +37,124 @@ h1 {
 }
 
 .container {
-    max-width: 1292px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer_btm {
+    color: #fff !important;
+}
+
+.activity_list {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px){
+    
+    .category_list {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .advantages_item {
+        flex-direction: column;
+    }
+    .advantages_item a {
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    .event_item {
+        height: auto !important;
+        padding: 20px 0;
+    }
+    .content_ftr {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .advantages_item p {
+        width: auto !important;
+        padding-right: 20px !important;
+    }
+
+    .parts_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        row-gap: 55px;
+    }
+}
+
+
+
+@media screen and (max-width: 780px){
+
+    
+
+    .parts_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        row-gap: 55px;
+    }
+
+    .form_repair h1 {
+        width: auto !important;
+    }
+    
+    .container {
+        max-width: 720px;
+        margin: 0 20px;
+    }
+
+    .advantages_item {
+        flex-direction: column;
+    }
+
+    .advantages_list {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .advantages_item {
+        width: 100%;
+    }
+    .project_card {
+        display: flex !important;
+        gap: 40px;
+        flex-direction: column  !important;
+    }
+    .event_list {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .cover span {
+        font-size: 32px !important;
+    }
+    .cover p:nth-child(3) {
+        width: auto !important;
+    }
+
+    .button_form button {
+        padding: 17px 17px !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav {
+        flex-direction: column;
+        GAP: 20px;
+    }
+    
+
+    .parts_list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        row-gap: 55px;
+    }
 }
 
 /**навигация**/
@@ -158,18 +274,17 @@ nav {
 /**полоса с брендами под обложкой**/
 
 .brands {
-    background-color: #E6E6E6;
+    /* background-color: #E6E6E6; */
     padding: 27px 0;
     /* margin-top: 40px; */
-}
-
-.brands .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
-.brands .container img {
+.brands img {
     height: 54px;
 }
 
@@ -846,6 +961,7 @@ footer {
 }
 
 .reputation_item {
+    margin-bottom: 40px;
     background-color: #7c2828;
     border: 0;
     border-radius: 10px;
@@ -940,4 +1056,222 @@ footer {
     border: 0;
     border-radius: 10px;
     color: #ffffff;
+}
+
+
+
+
+
+/**Категории запчастей для вашего авто**/
+.category {
+    margin-bottom: 100px;
+}
+
+.category h1 {
+    margin: 40px 0 25px 0;
+}
+
+.category_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.category_item {
+    overflow: hidden;
+    border: 2px solid #878787;
+    border-radius: 10px;
+    padding: 30px 35px 0 30px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000000;
+}
+
+.category_item:hover {
+    background-color: #ececec;
+}
+
+.category_item img {
+    margin-left: auto;
+}
+
+.category_item p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.name_brand {
+    margin-bottom: 150px;
+}
+/**name_brand**/
+
+.name_brand {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 0 8px;
+}
+
+.name_brand li {
+    background-color: #B22A2A;
+    padding: 17px 14px;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+
+
+/**фильтр**/
+
+.filter_parts>p {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.vaz_lada_parts>p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+.nissan_parts>p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+.toyota_parts>p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+.bmw_parts>p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+.audi_parts>p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+.mercedes_parts>p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+.filter_parts {
+    margin: 10px 0px 50px 0;
+}
+
+.btn_mod {
+    background-color: #B22A2A;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn_mod:focus {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.2s;
+}
+
+.model_btn {
+    display: flex;
+    column-gap: 10px;
+}
+
+/**для двигателя**/
+
+.engine_parts {
+    margin-bottom: 200px;
+}
+
+.engine_parts h1 {
+    margin: 40px 0 25px 0;
+}
+
+.parts_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 55px;
+}
+
+.parts_card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.parts_card a {
+    display: flex;
+    margin: auto;
+}
+
+.parts_card a img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.name_parts {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 50px 0 10px 0;  
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin-bottom: 20px;
+}
+
+.options li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.button_card {
+    margin: 0 auto;
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.button_card button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.button_card button:last-child {
+    background-color: #B22A2A;
+}
+
+.button_card span {
+    font-size: 18px;
+    font-weight: 500;
 }

@@ -15,65 +15,65 @@
         <h1>О компании и ее деятельности</h1>
         <div class="activity_list">
             <figure class="activity_item">
-                <img src="img/icon/car-repair_svgrepo.com.png" alt="repair">
+                <img src="{% static 'img/icon/car-repair_svgrepo.com.png' %}" alt="repair">
                 <figcaption>Тюнинг авто и его усовершенствование</figcaption>
             </figure>                
             <figure class="activity_item">
-                <img src="img/icon/document.png" alt="document">
+                <img src="{% static 'img/icon/document.png' %}" alt="document">
                 <figcaption>Оказание услуг в поиске запчастей из зарубежа</figcaption>
             </figure>                                        
             <figure class="activity_item">
-                <img src="img/icon/Vector activity.png" alt="mech">
+                <img src="{% static 'img/icon/Vector activity.png' %}" alt="mech">
                 <figcaption>Ремонт и техническое обслуживание</figcaption>
             </figure>                                        
             <figure class="activity_item">
-                <img src="img/icon/color.png" alt="color">
+                <img src="{% static 'img/icon/color.png' %}" alt="color">
                 <figcaption>Произведение малярных работ</figcaption>
             </figure>            
             <figure class="activity_item">
-                <img src="img/icon/audio.png" alt="audio">
+                <img src="{% static 'img/icon/audio.png' %}" alt="audio">
                 <figcaption>Установка и настройка аудиосистемы</figcaption>
             </figure>
         </div>
     </section>
-    <section class="block_activity">
+    <!-- <section class="block_activity">
         <div class="block_activity_item">
             <p>Ремонт двигателя</p>
             <div class="activity_item_btn">
-                <a href="">Каталог</a><a href="">Запись</a>
+                <a href="/catalog">Каталог</a><a href="/remont">Запись</a>
             </div>
         </div>
         <div class="block_activity_item">
             <p>Ремонт ходовой части</p>
             <div class="activity_item_btn">
-                <a href="">Каталог</a><a href="">Запись</a>
+                <a href="/catalog">Каталог</a><a href="/remont">Запись</a>
             </div>
         </div>
         <div class="block_activity_item">
             <p>Малярные работы</p>
             <div class="activity_item_btn">
-                <a href="">Запись</a>
+                <a href="/catalog">Запись</a>
             </div>
         </div>
         <div class="block_activity_item">
             <p>Тюнинг вашего авто</p>
             <div class="activity_item_btn">
-                <a href="">Каталог</a><a href="">Запись</a>
+                <a href="/catalog">Каталог</a><a href="/remont">Запись</a>
             </div>
         </div>
         <div class="block_activity_item">
             <p>доставка испортных запчастей</p>
             <div class="activity_item_btn">
-                <a href="">Заказать</a>
+                <a href="/catalog">Заказать</a>
             </div>
         </div>
         <div class="block_activity_item">
             <p>техническое обслуживание</p>
             <div class="activity_item_btn">
-                <a href="">Каталог</a><a href="">Запись</a>
+                <a href="/catalog">Каталог</a><a href="/remont">Запись</a>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="choice">
         <h1> Почему нас выбирают</h1>
         <div class="choice_list">
@@ -86,11 +86,11 @@
             <div class="reputation_item">
                 <div class="icon_requtation">
                     <figure>
-                        <img src="img/icon/group.png" alt="group">
+                        <img src="{% static '/img/icon/group.png' %}" alt="group">
                         <figcaption>Более 50 высококвалифицированных  сотрудников</figcaption>
                     </figure>
                     <figure>
-                        <img src="img/icon/doc.png" alt="document">
+                        <img src="{% static '/img/icon/doc.png' %}" alt="document">
                         <figcaption>Гарантия качества запчастей и ремонта</figcaption>
                     </figure>
                 </div>
@@ -109,55 +109,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="import">
-        <h1>Импортные запчасти</h1>
-        <div class="categories_list">
-            <div class="categories_item">
-                <p>Ходовая и рулевая части</p>
-                <img src="{% static '/img/Главная/руль.png' %}" alt="wheels">
-            </div>
-            <div class="categories_item">
-                <p>Шины и диски</p>
-                <img src="{% static '/img/Главная/BBS_TL-A_glossy_bronze_30_1000x1000 2.png' %}" alt="disk">
-            </div>
-            <div class="categories_item">
-                <p>Для двигателя</p>
-                <img src="{% static '/img/Главная/pngtree-v8-engine-pistons-on-a-crankshaft-gear-png-image_10495175 1.png' %}" alt="engine" style="width: 248px; height: 104px; margin-top: auto;">
-            </div>
-            <div class="categories_item">
-                <p>Контрактные ДВС</p>
-                <img src="{% static '/img/Главная/remont-dvigatelya 1.png' %}" alt="dvs">
-            </div>
-            <div class="categories_item">
-                <p>Кузовные детали</p>
-                <img src="{% static '/img/Главная/unnamed 1.png' %}" alt="sli">
-            </div>
-            <div class="categories_item">
-                <p>Другое</p>
-                <img src="{% static '/img/Главная/Group 29.png' %}" alt="ovl">
-            </div>
-        </div>
-    </section>
-    <section class="company_list">
-        <ul>
-            <li>Volkswagen</li>
-            <li>Mazda</li>
-            <li>Nissan</li>
-            <li>Bentley</li>
-            <li>Chevrolet</li>
-            <li>Infiniti</li>
-            <li>Ford</li>
-            <li>Jaguar</li>
-            <li>Lexus</li>
-            <li>Mitsubishi</li>
-            <li>BMW</li>
-            <li>Audi</li>
-            <li>Toyota</li>
-            <li>Mercedes-Benz</li>
-            <li>Shkoda</li>
-            <li>Suzuki</li>
-        </ul>
     </section>
 </div>
 

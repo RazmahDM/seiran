@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from web.views import HomeView, RemontView, AboutView
+from web.views import HomeView, RemontView, AboutView, CatalogView, ProductsView
 from django.conf import settings  # new
 from django.conf.urls.static import static  # new
 
@@ -25,6 +25,8 @@ urlpatterns = [
     path('', HomeView.as_view()),
     path('remont/', RemontView.as_view()),
     path('about/', AboutView.as_view()),
+    path('catalog/', CatalogView.as_view()),
+    path('products/', ProductsView.as_view()),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,
