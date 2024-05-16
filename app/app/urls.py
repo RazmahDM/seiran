@@ -26,7 +26,7 @@ urlpatterns = [
     path('remont/', RemontView.as_view()),
     path('about/', AboutView.as_view()),
     path('catalog/', CatalogView.as_view()),
-    path('products/', ProductsView.as_view()),
+    path('catalog/<int:id>', ProductsView.as_view()),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,

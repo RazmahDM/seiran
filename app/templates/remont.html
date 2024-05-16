@@ -13,58 +13,62 @@
     </ul>
     <section class="form_repair">
         <h1>Заполните форму для предварительной записи на ремонт</h1>
-        <form class="form_repair_list" action="" method="post" autocomplete="on" name="repair_form">
+        <form class="form_repair_list" action="https://api.web3forms.com/submit" method="POST" autocomplete="on" name="repair_form">
+                <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="b2a07004-7dca-49c6-be22-134d67970f86">
             <div class="auto_info">  
                 <div class="form_group">
                     <label for="brand">Марка</label>
-                    <input type="text" class="form-control" id="brand" required>
+                    <input name="marka" type="text" class="form-control" id="brand" required>
                 </div>
                 <div class="form_group">
                     <label for="model">Модель</label>
-                    <input type="text" class="form-control" id="model" required>
+                    <input name="model" type="text" class="form-control" id="model" required>
                 </div>
                 <div class="form_group">
                     <label for="year">Год выпуска</label>
-                    <input type="text" class="form-control" id="year" minlength="4" maxlength="4">
+                    <input name="year" type="text" class="form-control" id="year" minlength="4" maxlength="4">
                 </div>
             </div>
             <div class="problem">                        
                 <div class="form_group">
                     <label for="cause">Причина обращения</label>
-                    <input type="text" class="form-control" id="cause" required>
+                    <input name="reason" type="text" class="form-control" id="cause" required>
                 </div>
                 <div class="form_group">
                     <label for="problem">Описание проблемы</label>
-                    <textarea type="text" class="form-control" id="problem"></textarea>
+                    <textarea name="problem" type="text" class="form-control" id="problem"></textarea>
                 </div>
             </div>
             <div class="user_info">                        
                 <div class="form_group">
                     <label for="number">Номер телефона</label>
-                    <input type="tel" class="form-control" id="number" autocomplete="on" minlength="11" maxlength="11" required>
+                    <input name="phone" type="tel" class="form-control" id="number" autocomplete="on" minlength="11" maxlength="11" required>
                 </div>
                 <div class="form_group">
                     <label for="email">Адрес эл. почты</label>
-                    <input type="email" class="form-control" id="email" autocomplete="on" required>
+                    <input name="email" type="email" class="form-control" id="email" autocomplete="on" required>
                 </div>
                 <div class="form_group">
                     <label for="surname">Фамилия</label>
-                    <input type="text" class="form-control" id="surname" autocomplete="on" required>
+                    <input name="firstname" type="text" class="form-control" id="surname" autocomplete="on" required>
                 </div>
                 <div class="form_group">
                     <label for="name">Имя</label>
-                    <input type="text" class="form-control" id="name" autocomplete="on" required>
+                    <input name="lastname" type="text" class="form-control" id="name" autocomplete="on" required>
                 </div>
                 <div class="form_group">
                     <label for="date">Дата и время</label>
-                    <input type="datetime-local" class="form-control" id="date" required>
+                    <input name="date" type="datetime-local" class="form-control" id="date" required>
                 </div>
             </div>
             <div class="button_form">                        
                 <div class="form_group">
-                    <input type="checkbox" class="form-control" required value="agreement">
-                    <label for="agreement">Я даю согласие на обработку персональных данных</label>
+                    <input name="checkbox" type="checkbox" class="form-control" required value="agreement">
+                    <label for="agreement">Я даю согласие на <a class="policy" href="{% static '/policy.pdf' %}">обработку персональных данных</a></label>
                 </div>
+                <!-- hCaptcha Spam Protection -->
+                <div class="h-captcha" data-captcha="true"></div>
                 <button type="submit">Записаться</button>
             </div>
         </form>

@@ -4,7 +4,11 @@
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="{% static 'img/logo.png' %}" alt="logo" style="background-color: beige;">
+                    {% if request.path == "/" %}
+                    <img src="{% static '/img/logo.png' %}" alt="logo" >
+                    {% else %}
+                    <img src="{% static '/img/logo_bl.png' %}" alt="logo" >
+                    {% endif %}
                 </a>
             </div>
             <div class="menu">

@@ -14,66 +14,12 @@
             <section class="category">
                 <h1>Категории запчастей для вашего авто</h1>
                 <div class="category_list">
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Для двигателя</p>
-                        <img src="{% static 'img/Главная/для_двс.png' %}" alt="для_двс">
+                    {% for cat in object_list %}
+                    <a href="/catalog/{{cat.pk}}" class="category_item">
+                        <p>{{cat.title}}</p>
+                        <img src="{{cat.img.url}}" alt="картинка">
                     </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Для рулевая части</p>
-                        <img src="{% static 'img/Главная/руль.png' %}" alt="руль">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Для подвески</p>
-                        <img src="{% static 'img/Главная/подвеска.png' %}" alt="подвеска">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Ходовая часть</p>
-                        <img src="{% static 'img/Главная/ходовая.png' %}" alt="ходовая">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>АКПП и МКПП</p>
-                        <img src="{% static 'img/Главная/кпп.png' %}" alt="кпп">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Тормозная система</p>
-                        <img src="{% static 'img/Главная/тормоза.png' %}" alt="тормоза">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Кузовные детали</p>
-                        <img src="{% static 'img/Главная/кузов.png' %}" alt="кузов">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Электроника</p>
-                        <img src="{% static 'img/Главная/мозг.png' %}" alt="мозг">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Аудиосистема</p>
-                        <img src="{% static 'img/Главная/музыка.png' %}" alt="музыка">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Расходный материал</p>
-                        <img src="{% static 'img/Главная/расходники.png' %}" alt="расходники">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Выхлопные системы и оптика</p>
-                        <img src="{% static 'img/Главная/выхлоп.png' %}" alt="выхлоп">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Автохимия</p>
-                        <img src="{% static 'img/Главная/химия.png' %}" alt="химия">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Шины и диски</p>
-                        <img src="{% static 'img/Главная/колеса.png' %}" alt="колеса">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Импорт</p>
-                        <img src="{% static 'img/Главная/импорт.png' %}" alt="импорт">
-                    </a>
-                    <a href="/каталог/автохимия/index.html" class="category_item">
-                        <p>Комплекты</p>
-                        <img src="{% static 'img/Главная/комплект.png' %}" alt="комплект">
-                    </a>
+                    {% endfor %}
                 </div>
             </section>
             <ul class="name_brand">
