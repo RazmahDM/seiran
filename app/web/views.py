@@ -28,8 +28,8 @@ class ProductsView(ListView):
     template_name = 'products.html'
 
     def get_queryset(self):
-        category = get_object_or_404(Category, pk=self.kwargs["id"])
-        self.products = Product.objects.filter(category=category)
+        self.category = get_object_or_404(Category, pk=self.kwargs["id"])
+        self.products = Product.objects.filter(category=self.category)
         return self.products
     
     def get_context_data(self, **kwargs):
@@ -37,4 +37,5 @@ class ProductsView(ListView):
         context = super().get_context_data(**kwargs)
         # Add in the publisher
         context["products"] = self.products
+        context["category"] = self.category
         return context
